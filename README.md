@@ -62,3 +62,12 @@ sudo systemctl enable influxdb
 ```sh
 sudo systemctl start influxdb
 ``` 
+7. start de DB
+```sh
+influx
+``` 
+8. create DB
+```sh
+create database <name>
+``` 
+
