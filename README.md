@@ -41,10 +41,7 @@ wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 ```
 2. Now enter the following command to add the InfluxDB repository to the sources list. 
 ```sh
-source /etc/os-release 
-```
-```sh
-echo "deb https://repos.influxdata.com/debian${lsb_release -cs} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+echo "deb https://repos.influxdata.com/debian buster stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 ```
 3. Run the following command on your Raspberry Pi to update the package list.
 ```sh
